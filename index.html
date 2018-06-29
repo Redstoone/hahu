@@ -50,9 +50,9 @@
 
     <section class="probootstrap_section" id="section-feature-testimonial">
       <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-12 text-center mb-5 probootstrap-animate">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">公司简介</h2>
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-12 text-center probootstrap-animate">
+            <h2 class="display-4 border-bottom probootstrap-section-heading mb-5">公司简介</h2>
             <p class="lead mb-4">宁波哈虎网络科技有限公司注册成立于2017年11月24日，公司注册地：宁波市江北区长兴路618号42幢2121室。公司主要是利用信息网络经营网络游戏产品（含网络游戏虚拟货币发行），从事网络文化产品的展览和比赛活动。公司成立以来共计开发游戏二款：一款H5网页地方棋牌游戏《闲牛游戏》、一款地方性游戏《哈虎游戏》。2017年快速全国布局，先后与7个城市代理商建立合作关系，共同运营健康竞技棋牌游戏。游戏营业利润44.566556万元。市场布局情况：先后开发了奉化麻将、宁波麻将、象山麻将、斗地主等竞技游戏，与体育局初步洽谈合作，2018年会在地方性体育竞技选拔赛中会做出贡献。</p>
             <p class="lead mb-4">哈虎网络科技专门建立研发、营销、售后服务等团队，与风险投资机构初步洽谈并有投资意向，2018年会重点省市全国布局，目标是发展一百个城市竞技代理商，同时在线用户达3万，日活跃用户达20万，日营业过20万营业流水，月均600万营业流水。</p>
           </div>
@@ -92,13 +92,13 @@
           </div>
           <div class="col-lg-4 col-md-6 probootstrap-animate mb-4">
             <a href="#" class="probootstrap-thumbnail">
-              <img src="assets/images/img_3.jpg" alt="Free Template by ProBootstrap.com" class="img-fluid">
+              <img src="assets/images/img_4.jpg" alt="Free Template by ProBootstrap.com" class="img-fluid">
               <h3>奉化麻将</h3>
             </a>
           </div>
           <div class="col-lg-4 col-md-6 probootstrap-animate mb-4">
             <a href="#" class="probootstrap-thumbnail">
-              <img src="assets/images/img_3.jpg" alt="Free Template by ProBootstrap.com" class="img-fluid">
+              <img src="assets/images/img_5.jpg" alt="Free Template by ProBootstrap.com" class="img-fluid">
               <h3>象山麻将</h3>
             </a>
           </div>
@@ -157,13 +157,17 @@
     <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=3.0&ak=TP8TFzQgzyg1yx6t4k96F7AiFePln1Fo&services=&t=20170517145936"></script>
     <script type="text/javascript">
       var map = new BMap.Map("l-map");
-      map.addControl(new BMap.NavigationControl());
-      var local = new BMap.LocalSearch(map, {
-        renderOptions: {
-          map: map
-        }
-      });
-      local.search("浙江省宁波市江北区长兴路618号42幢");
+      var point = new BMap.Point(121.480333,29.950721);
+      var marker = new BMap.Marker(point);
+      map.addOverlay(marker);
+      map.centerAndZoom(point, 18);
+      var opts = {
+        width : 200,
+        height: 70,
+        title : "宁波哈虎网络科技有限公司" ,
+      }
+      var infoWindow = new BMap.InfoWindow("地址：宁波市江北区长兴路618号42幢2121室", opts);
+      map.openInfoWindow(infoWindow,point); //开启信息窗口 
     </script>
 	</body>
 </html>
