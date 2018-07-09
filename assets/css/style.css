@@ -570,5 +570,63 @@ a {
   height: 100%;
 }
 .lead{
-  color: #666;
+  color: #444;
+  text-align: left;
+  font-size: 16px;
+  line-height: 28px;
+}
+.txt-in{
+  text-indent: 2em;
+}
+.media-body{
+  height: 214px;
+}
+.icon{
+  width: 75px;
+  height: 66px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon2{
+  background-image: url('../images/002.png');
+}
+.icon3{
+  background-image: url('../images/005.png');
+}
+.icon4{
+  background-image: url('../images/004.png');
+}
+.icon5{
+  background-image: url('../images/007.png');
+}
+.icon6{
+  background-image: url('../images/003.png');
+}
+.icon7{
+  background-image: url('../images/008.png');
+}
+.owl-carousel .probootstrap-slide em{
+  font-size: 14px;
+  color: #000;
+}
+.owl-prev,
+.owl-next{
+  width: 48px;
+  height: 48px;
+}
+.ion-chevron-left,
+.ion-chevron-right{
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.ion-chevron-left{
+  background-image: url('../images/arrow_left.png');
+}
+.ion-chevron-right{
+  background-image: url('../images/arrow_right.png');
 }
